@@ -1,6 +1,12 @@
 package creational
 
 import "fmt"
+// 优点
+// 加入新产品工厂时很方便，符合开闭原则
+
+// 缺点
+// 添加新产品时，基本每个产品工厂都要涉及到改变
+
 
 type Factory interface {
 	ProduceTV() TV
